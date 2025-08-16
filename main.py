@@ -158,7 +158,7 @@ async def is_subscribed(bot: Bot, user_id: int) -> bool:
 async def on_start(message: Message, bot: Bot):
     await upsert_user(message.from_user.id, message.from_user.first_name, message.from_user.username)
     text = (
-        "👋 Привет!\n\n"
+        "👋 Приветствую!\n\n"
         "Нажмите кнопку ниже, чтобы получить доступ."
     )
     await message.answer(text, reply_markup=start_kb())
