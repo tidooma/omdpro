@@ -177,7 +177,7 @@ async def on_check_sub(callback: CallbackQuery, bot: Bot):
         await upsert_user(user_id, callback.from_user.first_name, callback.from_user.username)
         await callback.message.edit_text(
             "✅ Подписка подтверждена!\n"
-            f"Ваша ссылка на приватный чат:\n{PRIVATE_CHAT_LINK}"
+            f"Ваша ссылка на чат:\n{PRIVATE_CHAT_LINK}"
         )
     else:
         await callback.answer(
