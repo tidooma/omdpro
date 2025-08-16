@@ -1,0 +1,25 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Виртуальные окружения
+.venv/
+venv/
+
+# --- SQLite базы ---
+*.db
+
+# --- dotenv (секреты) ---
+.env
+.env.local
+.env.*.local
+*.env
+
+# --- Системные файлы macOS ---
+.DS_Store
+
+# --- IDE ---
+.idea/
+.vscode/
